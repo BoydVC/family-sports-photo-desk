@@ -1,0 +1,64 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Family Sports Photo Desk</title><style>
+body{font-family:system-ui;background:#0f1720;color:#e6edf3;max-width:900px;margin:2em auto;padding:0 1em}
+.panel{background:#17212b;border:1px solid #2d3b48;border-radius:10px;padding:1em;margin:1em 0}
+h2{color:#f0b429}.z{color:#3fb950}table{width:100%;border-collapse:collapse}td,th{padding:.4em;border-bottom:1px solid #2d3b48;text-align:left}
+.hold{background:#5a3e00;padding:2px 8px;border-radius:6px}
+.ex{color:#8b949e;font-size:.9em}</style></head><body>
+<h1>📸 Family Sports Photo Desk</h1><p>Weekend Aspire / Hornets / API · Char &amp; Vic · Millersville · America/New_York · EXAMPLE rows only · Not KPD</p>
+<div class="panel" id="law"><h2>Brief-050 law · Family sports photo desk</h2><ul id="c"></ul><div id="s"></div><p id="lc"></p></div>
+<div class="panel"><h2>Hold-before-share album inbox</h2><table><thead><tr><th>ID</th><th>Team</th><th>Kid</th><th>Day</th><th>Photos</th><th>Status</th></tr></thead><tbody id="t"></tbody></table>
+<p>Share / post / upload / AirDrop are disabled here. Human Apply only, after EXIF scrub + consent. Pairs with Pam + Story Vault.</p></div>
+<div class="panel" id="law060"><h2>Brief-060 law · Family sports film night</h2><ul id="c6"></ul><div id="s6"></div><p id="lc6"></p><table><tbody id="t6"></tbody></table></div>
+<div class="panel" id="law066"><h2>Brief-066 law · Family sports highlight reel</h2><ul id="c66"></ul><div id="s66"></div><p id="lc66"></p>
+<table><thead><tr><th>ID</th><th>Lane</th><th>Kid</th><th>Team</th><th>Day</th><th>Clips</th><th>Status</th></tr></thead><tbody id="t66"></tbody></table>
+<p class="ex">Compile private. Hold the share. Length is LIVE only with file proof. Never auto-post kids clips.</p></div>
+<div class="panel" id="law081"><h2>Brief-081 law · Family sports carpool photo-day</h2><ul id="c81"></ul><div id="s81"></div><p id="lc81"></p>
+<table><thead><tr><th>Lane</th><th>Status</th><th>Hold default</th><th>Count/proof</th></tr></thead><tbody id="t81"></tbody></table>
+<p class="ex">Carpool first. Hold the notify. Hold the album. Counts LIVE only with proof. Never auto-text kids. Never auto-post kids photos. Cousin merge_apply=false.</p></div>
+<div class="panel" id="law084"><h2>Brief-084 law · Family sports film-room Sunday</h2><ul id="c84"></ul><div id="s84"></div><p id="lc84"></p>
+<table><thead><tr><th>Lane</th><th>Status</th><th>Hold default</th><th>Count/proof</th></tr></thead><tbody id="t84"></tbody></table>
+<p class="ex">Film-room first. Hold the share. Clip counts LIVE only with proof. Never auto-post kids video. Never auto-text kids. Cousin merge_apply=false.</p></div>
+<script>fetch('/api/brief060').then(r=>r.json()).then(d=>{c6.innerHTML=d.constraints.map(x=>`<li>${x}</li>`).join('');
+s6.innerHTML=Object.entries(d.scorecard).map(([k,v])=>`<code class=z>${k}=${v}</code>`).join(' · ');lc6.textContent='live_check: clips_live='+d.live_check.clips_live+' · pairs brief-050 + brief-035';
+t6.innerHTML=d.film_night.map(r=>`<tr><td>${r.id}</td><td>${r.team}</td><td>${r.kid}</td><td>${r.day}</td><td>${r.clips}</td><td><span class=hold>${r.status}</span></td></tr>`).join('')});</script>
+<script>fetch('/api/brief050').then(r=>r.json()).then(d=>{
+c.innerHTML=d.constraints.map(x=>`<li>${x}</li>`).join('');
+s.innerHTML=Object.entries(d.scorecard).map(([k,v])=>`<code class=z>${k}=${v}</code>`).join(' · ');
+lc.textContent='live_check: albums_live='+d.live_check.albums_live;
+t.innerHTML=d.inbox.map(r=>`<tr><td>${r.id}</td><td>${r.team}</td><td>${r.kid}</td><td>${r.day}</td><td>${r.photos}</td><td><span class=hold>${r.status}</span></td></tr>`).join('')})</script>
+<script>fetch('/api/brief066').then(r=>r.json()).then(d=>{
+c66.innerHTML=d.constraints.map(x=>`<li>${x}</li>`).join('');
+s66.innerHTML=Object.entries(d.scorecard).map(([k,v])=>`<code class=z>${k}=${v}</code>`).join(' · ');
+const lc=d.live_check||{};
+lc66.textContent='live_check: ok='+lc.ok+' · fake_live='+lc.fake_live+' · reel_live='+lc.reel_live+' · pairs brief-050 + Pam (not KPD)';
+t66.innerHTML=(d.reel_board||[]).map(r=>`<tr><td>${r.id}</td><td>${r.lane}</td><td>${r.kid}</td><td>${r.team}</td><td>${r.day}</td><td>${r.clips}</td><td><span class=hold>${r.status}</span></td></tr>`).join('')});</script>
+<script>
+async function loadBrief081(){
+  const d=await fetch('/api/brief081',{cache:'no-store'}).then(r=>r.json());
+  c81.innerHTML=(d.constraints||[]).map(x=>`<li>${x}</li>`).join('');
+  s81.innerHTML=Object.entries(d.scorecard||{}).map(([k,v])=>`<code class=z>${k}=${v}</code>`).join(' · ');
+  const lc=d.live_check||{}, board=d.carpool_photo_day||{}, holds=lc.holds||board.holds||{};
+  const n=holds.notify_drivers||{}, a=holds.share_album||{}, album=board.album||{};
+  lc81.textContent='live_check: ok='+lc.ok+' · fake_live='+lc.fake_live+' · dual_proof='+lc.dual_proof+' · albums_live='+lc.albums_live+' · merge_apply='+lc.merge_apply+' · Hold review_private';
+  t81.innerHTML=
+    `<tr><td>notify_drivers</td><td><span class=hold>${n.state||'HOLD'}</span></td><td>${n.default||'review_private'}</td><td>roster EXAMPLE · proof null</td></tr>`+
+    `<tr><td>share_album</td><td><span class=hold>${a.state||'HOLD'}</span></td><td>${a.default||'review_private'}</td><td>count ${album.count===null||album.count===undefined?'null':album.count} · ${album.status||'EXAMPLE'}</td></tr>`;
+}
+loadBrief081();
+</script>
+
+<script>
+async function loadBrief084(){
+  const d=await fetch('/api/brief084',{cache:'no-store'}).then(r=>r.json());
+  c84.innerHTML=(d.constraints||[]).map(x=>`<li>${x}</li>`).join('');
+  s84.innerHTML=Object.entries(d.scorecard||{}).map(([k,v])=>`<code class=z>${k}=${v}</code>`).join(' · ');
+  const lc=d.live_check||{}, board=d.film_room_sunday||{}, holds=lc.holds||board.holds||{};
+  const sh=holds.share||{}, tk=holds.text_kids||{}, clips=board.clips||{}, leave=board.leave_by||{};
+  lc84.textContent='live_check: ok='+lc.ok+' · fake_live='+lc.fake_live+' · dual_proof='+lc.dual_proof+' · clips_live='+lc.clips_live+' · merge_apply='+lc.merge_apply+' · Hold review_private';
+  t84.innerHTML=
+    `<tr><td>share</td><td><span class=hold>${sh.state||'HOLD'}</span></td><td>${sh.default||'review_private'}</td><td>clips ${clips.count===null||clips.count===undefined?'null':clips.count} · ${clips.status||'EXAMPLE'}</td></tr>`+
+    `<tr><td>text_kids</td><td><span class=hold>${tk.state||'HOLD'}</span></td><td>${tk.default||'review_private'}</td><td>leave_by ${leave.time===null||leave.time===undefined?'null':leave.time} · ${leave.status||'EXAMPLE'}</td></tr>`;
+}
+loadBrief084();
+</script>
+</body></html>

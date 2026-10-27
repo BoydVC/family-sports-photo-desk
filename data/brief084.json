@@ -1,0 +1,124 @@
+{
+  "id": "brief-084",
+  "brief_id": "brief-084",
+  "title": "Family Sports Film-Room Sunday \u2014 Millersville Aspire/Hornets/API Film-Room Board (Clips + Leave-By) with Hold Before Slack Share or Auto-Text Kids",
+  "source": "/workspace/tokenmax/agent-brief-forge/out/brief-084.md + peer-review-084.json + citations-084.json",
+  "peer_review": "/workspace/tokenmax/agent-brief-forge/out/peer-review-084.json",
+  "citations": "/workspace/tokenmax/agent-brief-forge/out/citations-084.json",
+  "timezone": "America/New_York",
+  "tz": "America/New_York",
+  "home": "Millersville, MD",
+  "place": "Millersville, MD",
+  "kids": [
+    "Char",
+    "Vic"
+  ],
+  "pairs": [
+    "brief-013 Sports Week",
+    "brief-050 Family sports photo desk",
+    "Pam"
+  ],
+  "cousins": {
+    "brief_050": {
+      "merge_apply": false,
+      "role": "family sports photo desk"
+    },
+    "brief_060": {
+      "merge_apply": false,
+      "role": "family sports film night"
+    },
+    "brief_066": {
+      "merge_apply": false,
+      "role": "family sports highlight reel"
+    },
+    "brief_081": {
+      "merge_apply": false,
+      "role": "carpool photo-day"
+    }
+  },
+  "merge_apply": false,
+  "not_kpd": true,
+  "dual_proof": false,
+  "constraints": [
+    "Hold before any Slack share or kids text; human Apply only; default review_private / export_clips",
+    "Never auto-post kids video; never auto-text Char/Vic",
+    "Never fabricate LIVE clip counts; dual_proof=false until this-session file proof; count null until proof",
+    "Never auto-Slack, auto-AirDrop, fabricate leave-by, or auto-share reel",
+    "Hold timeout never shares/posts; burn_outbound=0",
+    "Cousin brief-050/060/066/081 merge_apply=false \u2014 photo share \u2260 film-night \u2260 film-room share \u2260 carpool notify",
+    "EXAMPLE/SYNTHETIC Sunday film-room board only; Bind 127.0.0.1; Not KPD"
+  ],
+  "scorecard": {
+    "auto_post_film": 0,
+    "auto_text_kids": 0,
+    "fabricate_clip_count": 0,
+    "auto_send_slack": 0,
+    "auto_airdrop": 0,
+    "fabricate_leave_by": 0,
+    "auto_share_reel": 0,
+    "fake_live_clips": 0,
+    "hold_timeout_share": 0,
+    "burn_outbound": 0
+  },
+  "film_room_sunday": {
+    "schema": "family-sports-film-room/v1",
+    "tz": "America/New_York",
+    "place": "Millersville, MD",
+    "honesty": "EXAMPLE/SYNTHETIC",
+    "dual_proof": false,
+    "window": {
+      "kind": "Aspire/Hornets/API Sunday film-room",
+      "status": "EXAMPLE"
+    },
+    "clips": {
+      "count": null,
+      "status": "EXAMPLE",
+      "proof": null,
+      "live_badge": false
+    },
+    "leave_by": {
+      "time": null,
+      "status": "EXAMPLE",
+      "basis": null,
+      "live_badge": false
+    },
+    "holds": {
+      "share": {
+        "destination": "review_private",
+        "state": "HOLD",
+        "default": "review_private",
+        "options": [
+          "review_private",
+          "export_clips",
+          "share_slack",
+          "airdrop",
+          "post_public",
+          "text_kids",
+          "share_reel",
+          "defer",
+          "reject"
+        ],
+        "digest_sha256": null,
+        "expires_at": null,
+        "cousin_ack": {
+          "brief_050": false,
+          "brief_060": false
+        }
+      },
+      "text_kids": {
+        "destination": "review_private",
+        "state": "HOLD",
+        "default": "review_private",
+        "digest_sha256": null,
+        "expires_at": null
+      }
+    }
+  },
+  "peer_review_verdict": "accept_with_revisions_noted",
+  "citations_meta": {
+    "http_citation_count": 225,
+    "fetched_ok_count": 225,
+    "in_brief_count": 225,
+    "passed": true
+  }
+}

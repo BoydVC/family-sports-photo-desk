@@ -1,0 +1,59 @@
+{
+  "id": "brief-050",
+  "title": "Family Sports Photo Desk \u2014 Weekend Aspire/Hornets/API Inbox \u2192 Album Hold Before Share",
+  "source": "/workspace/tokenmax/agent-brief-forge/out/brief-050.md",
+  "tz": "America/New_York",
+  "place": "Millersville, MD",
+  "kids": [
+    "Char",
+    "Vic"
+  ],
+  "pairs": [
+    "Pam",
+    "Family Story Vault (brief-035)"
+  ],
+  "not_kpd": true,
+  "constraints": [
+    "Hold before any share/post/upload/AirDrop; human Apply only",
+    "Never auto-post kids photos publicly",
+    "Never fabricate album or photo counts; LIVE counts come from files only",
+    "EXIF/GPS scrub + consent before share",
+    "EXAMPLE rows only in this demo; no real kids photos LIVE",
+    "Bind 127.0.0.1 only"
+  ],
+  "scorecard": {
+    "auto_post_photos": 0,
+    "fabricate_album": 0,
+    "auto_share_album": 0,
+    "auto_airdrop": 0,
+    "auto_upload_cloud": 0,
+    "fabricate_photo_count": 0,
+    "kids_public_post": 0
+  },
+  "inbox": [
+    {
+      "id": "EX-1",
+      "team": "Aspire (EXAMPLE)",
+      "kid": "Char",
+      "day": "Sat",
+      "photos": "EXAMPLE",
+      "status": "HOLD"
+    },
+    {
+      "id": "EX-2",
+      "team": "Hornets (EXAMPLE)",
+      "kid": "Vic",
+      "day": "Sat",
+      "photos": "EXAMPLE",
+      "status": "HOLD"
+    },
+    {
+      "id": "EX-3",
+      "team": "API (EXAMPLE)",
+      "kid": "Char",
+      "day": "Sun",
+      "photos": "EXAMPLE",
+      "status": "HOLD"
+    }
+  ]
+}

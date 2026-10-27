@@ -1,0 +1,97 @@
+{
+  "id": "brief-066",
+  "title": "Family Sports Highlight Reel — Millersville Aspire / Hornets / API Weekend Reel Compile with Hold Before Any Share or Post",
+  "source": "/workspace/tokenmax/agent-brief-forge/out/brief-066.md",
+  "peer_review": "/workspace/tokenmax/agent-brief-forge/out/peer-review-066.json",
+  "citations": "/workspace/tokenmax/agent-brief-forge/out/citations-066.json",
+  "timezone": "America/New_York",
+  "tz": "America/New_York",
+  "home": "Millersville, MD",
+  "place": "Millersville, MD",
+  "kids": ["Char", "Vic"],
+  "lanes": {
+    "char_aspire": {"clips": [], "status": "EXAMPLE"},
+    "vic_hornets": {"clips": [], "status": "EXAMPLE"},
+    "vic_api": {"clips": [], "status": "EXAMPLE"}
+  },
+  "pairs": [
+    "brief-050 Family sports photo desk",
+    "Pam",
+    "brief-060 Family sports film night",
+    "brief-035 Family Story Vault",
+    "brief-013 Sports Week"
+  ],
+  "not_kpd": true,
+  "constraints": [
+    "Hold before any share/post/AirDrop/AirPlay/cloud; human Apply only",
+    "Never auto-post Char/Vic clips to YouTube/Instagram/TikTok/X/Slack public",
+    "Never fabricate LIVE reel length/clip-count/readiness; LIVE only with duration_ms + bytes + sha256 (America/New_York)",
+    "Never AirDrop or AirPlay without Apply",
+    "Strip EXIF/GPS before any share path; faces need Hold note",
+    "Hold never times out into a post; photo-desk Apply ≠ film Apply ≠ reel post Apply",
+    "No auto-text kids about reel readiness; no burn outbound Slack/X/email",
+    "EXAMPLE/SYNTHETIC reel board only in this demo; Bind 127.0.0.1 only"
+  ],
+  "scorecard": {
+    "auto_post_reel": 0,
+    "fabricate_reel": 0,
+    "auto_share_reel": 0,
+    "auto_upload_cloud": 0,
+    "kids_public_post": 0,
+    "exif_gps_leak": 0,
+    "fake_live_reel_board": 0,
+    "auto_text_kids": 0,
+    "burn_outbound": 0,
+    "auto_airdrop_reel": 0,
+    "hold_timeout_post": 0,
+    "auto_airplay_reel": 0,
+    "faces_public_without_hold": 0
+  },
+  "reel_board": [
+    {
+      "id": "HR-1",
+      "lane": "char_aspire",
+      "kid": "Char",
+      "team": "Aspire",
+      "day": "Sat EXAMPLE",
+      "clips": "EXAMPLE",
+      "duration_ms": null,
+      "bytes": null,
+      "sha256": null,
+      "status": "HOLD",
+      "caption": "SYNTHETIC/EXAMPLE — not LIVE reel length"
+    },
+    {
+      "id": "HR-2",
+      "lane": "vic_hornets",
+      "kid": "Vic",
+      "team": "Hornets",
+      "day": "Sun EXAMPLE",
+      "clips": "EXAMPLE",
+      "duration_ms": null,
+      "bytes": null,
+      "sha256": null,
+      "status": "HOLD",
+      "caption": "SYNTHETIC/EXAMPLE — Hold before AirDrop/share"
+    },
+    {
+      "id": "HR-3",
+      "lane": "vic_api",
+      "kid": "Vic",
+      "team": "API",
+      "day": "Sun EXAMPLE",
+      "clips": "EXAMPLE",
+      "duration_ms": null,
+      "bytes": null,
+      "sha256": null,
+      "status": "HOLD",
+      "caption": "SYNTHETIC/EXAMPLE — EXIF strip before export"
+    }
+  ],
+  "hold": {
+    "destination": "review_private",
+    "digest_sha256": null,
+    "expires_at": null,
+    "note": "Hold before share/post; default review_private"
+  }
+}
