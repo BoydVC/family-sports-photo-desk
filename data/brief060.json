@@ -1,14 +1,14 @@
 {
   "id": "brief-060",
-  "title": "Family Sports Film Night \u2014 Millersville Weekend Aspire/Hornets/API Clips \u2192 Recap Hold Before Any Public Share",
+  "title": "Family Sports Film Night \u2014 Hometown Weekend Aspire/Hornets/API Clips \u2192 Recap Hold Before Any Public Share",
   "source": "/workspace/tokenmax/agent-brief-forge/out/brief-060.md",
   "peer_review": "/workspace/tokenmax/agent-brief-forge/out/peer-review-060.json",
   "citations": "/workspace/tokenmax/agent-brief-forge/out/citations-060.json",
   "tz": "America/New_York",
-  "place": "Millersville, MD",
+  "place": "Hometown",
   "kids": [
-    "Char",
-    "Vic"
+    "Kid A",
+    "Kid B"
   ],
   "pairs": [
     "brief-050 Family sports photo desk",
@@ -42,7 +42,7 @@
     {
       "id": "FN-1",
       "team": "Aspire",
-      "kid": "Char",
+      "kid": "Kid A",
       "day": "Sat Oct 31",
       "clips": "EXAMPLE",
       "status": "HOLD"
@@ -50,7 +50,7 @@
     {
       "id": "FN-2",
       "team": "Hornets/API",
-      "kid": "Vic",
+      "kid": "Kid B",
       "day": "Sun Nov 1",
       "clips": "EXAMPLE",
       "status": "HOLD"

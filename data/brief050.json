@@ -3,10 +3,10 @@
   "title": "Family Sports Photo Desk \u2014 Weekend Aspire/Hornets/API Inbox \u2192 Album Hold Before Share",
   "source": "/workspace/tokenmax/agent-brief-forge/out/brief-050.md",
   "tz": "America/New_York",
-  "place": "Millersville, MD",
+  "place": "Hometown",
   "kids": [
-    "Char",
-    "Vic"
+    "Kid A",
+    "Kid B"
   ],
   "pairs": [
     "Pam",
@@ -34,7 +34,7 @@
     {
       "id": "EX-1",
       "team": "Aspire (EXAMPLE)",
-      "kid": "Char",
+      "kid": "Kid A",
       "day": "Sat",
       "photos": "EXAMPLE",
       "status": "HOLD"
@@ -42,7 +42,7 @@
     {
       "id": "EX-2",
       "team": "Hornets (EXAMPLE)",
-      "kid": "Vic",
+      "kid": "Kid B",
       "day": "Sat",
       "photos": "EXAMPLE",
       "status": "HOLD"
@@ -50,7 +50,7 @@
     {
       "id": "EX-3",
       "team": "API (EXAMPLE)",
-      "kid": "Char",
+      "kid": "Kid A",
       "day": "Sun",
       "photos": "EXAMPLE",
       "status": "HOLD"

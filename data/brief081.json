@@ -1,15 +1,15 @@
 {
   "id": "brief-081",
   "brief_id": "brief-081",
-  "title": "Family Sports Carpool Photo-Day Hold — Millersville Aspire/Hornets/API Game-Day Carpool + Photo Desk Hold",
+  "title": "Family Sports Carpool Photo-Day Hold — Hometown Aspire/Hornets/API Game-Day Carpool + Photo Desk Hold",
   "source": "/workspace/tokenmax/agent-brief-forge/out/brief-081.md",
   "peer_review": "/workspace/tokenmax/agent-brief-forge/out/peer-review-081.json",
   "citations": "/workspace/tokenmax/agent-brief-forge/out/citations-081.json",
   "timezone": "America/New_York",
   "tz": "America/New_York",
-  "home": "Millersville, MD",
-  "place": "Millersville, MD",
-  "kids": ["Char", "Vic"],
+  "home": "Hometown",
+  "place": "Hometown",
+  "kids": ["Kid A", "Kid B"],
   "pairs": [
     "brief-023 carpool",
     "brief-050 Family sports photo desk",
@@ -26,7 +26,7 @@
   "dual_proof": false,
   "constraints": [
     "Hold before any driver notify or album share; human Apply only; default review_private",
-    "Never auto-text Char/Vic; never auto-post kids photos",
+    "Never auto-text Kid A/Kid B; never auto-post kids photos",
     "Never fabricate LIVE album counts; dual_proof=false until this-session file proof",
     "Never auto-notify drivers, auto-share album, auto-assign coverage, or auto-AirDrop",
     "Hold timeout never notifies/shares; burn_outbound=0",
@@ -48,7 +48,7 @@
   "carpool_photo_day": {
     "schema": "carpool-photo-day/v1",
     "tz": "America/New_York",
-    "place": "Millersville, MD",
+    "place": "Hometown",
     "honesty": "EXAMPLE/SYNTHETIC",
     "dual_proof": false,
     "window": {"kind": "Aspire/Hornets/API game-day", "status": "EXAMPLE"},

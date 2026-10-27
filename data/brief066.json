@@ -1,18 +1,18 @@
 {
   "id": "brief-066",
-  "title": "Family Sports Highlight Reel — Millersville Aspire / Hornets / API Weekend Reel Compile with Hold Before Any Share or Post",
+  "title": "Family Sports Highlight Reel — Hometown Aspire / Hornets / API Weekend Reel Compile with Hold Before Any Share or Post",
   "source": "/workspace/tokenmax/agent-brief-forge/out/brief-066.md",
   "peer_review": "/workspace/tokenmax/agent-brief-forge/out/peer-review-066.json",
   "citations": "/workspace/tokenmax/agent-brief-forge/out/citations-066.json",
   "timezone": "America/New_York",
   "tz": "America/New_York",
-  "home": "Millersville, MD",
-  "place": "Millersville, MD",
-  "kids": ["Char", "Vic"],
+  "home": "Hometown",
+  "place": "Hometown",
+  "kids": ["Kid A", "Kid B"],
   "lanes": {
-    "char_aspire": {"clips": [], "status": "EXAMPLE"},
-    "vic_hornets": {"clips": [], "status": "EXAMPLE"},
-    "vic_api": {"clips": [], "status": "EXAMPLE"}
+    "kida_aspire": {"clips": [], "status": "EXAMPLE"},
+    "kidb_hornets": {"clips": [], "status": "EXAMPLE"},
+    "kidb_api": {"clips": [], "status": "EXAMPLE"}
   },
   "pairs": [
     "brief-050 Family sports photo desk",
@@ -24,7 +24,7 @@
   "not_kpd": true,
   "constraints": [
     "Hold before any share/post/AirDrop/AirPlay/cloud; human Apply only",
-    "Never auto-post Char/Vic clips to YouTube/Instagram/TikTok/X/Slack public",
+    "Never auto-post Kid A/Kid B clips to YouTube/Instagram/TikTok/X/Slack public",
     "Never fabricate LIVE reel length/clip-count/readiness; LIVE only with duration_ms + bytes + sha256 (America/New_York)",
     "Never AirDrop or AirPlay without Apply",
     "Strip EXIF/GPS before any share path; faces need Hold note",
@@ -50,8 +50,8 @@
   "reel_board": [
     {
       "id": "HR-1",
-      "lane": "char_aspire",
-      "kid": "Char",
+      "lane": "kida_aspire",
+      "kid": "Kid A",
       "team": "Aspire",
       "day": "Sat EXAMPLE",
       "clips": "EXAMPLE",
@@ -63,8 +63,8 @@
     },
     {
       "id": "HR-2",
-      "lane": "vic_hornets",
-      "kid": "Vic",
+      "lane": "kidb_hornets",
+      "kid": "Kid B",
       "team": "Hornets",
       "day": "Sun EXAMPLE",
       "clips": "EXAMPLE",
@@ -76,8 +76,8 @@
     },
     {
       "id": "HR-3",
-      "lane": "vic_api",
-      "kid": "Vic",
+      "lane": "kidb_api",
+      "kid": "Kid B",
       "team": "API",
       "day": "Sun EXAMPLE",
       "clips": "EXAMPLE",

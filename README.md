@@ -1,5 +1,5 @@
 # Family Sports Photo Desk (brief-050)
-Hold-before-share album inbox for weekend Aspire/Hornets/API photos (Char/Vic, Millersville, America/New_York). EXAMPLE rows only; albums_live=false. Pairs Pam + Family Story Vault. Not KPD.
+Hold-before-share album inbox for weekend Aspire/Hornets/API photos (Kid A/Kid B, Hometown, America/New_York). EXAMPLE rows only; albums_live=false. Pairs Pam + Family Story Vault. Not KPD.
 - `./run.sh` → http://127.0.0.1:4329/ (127.0.0.1 only)
 - `GET /api/brief050` (with live_check)
 - 403 (GET+POST): /api/auto-post-photos, /api/fabricate-album, /api/auto-share-album, /api/auto-upload-cloud, /api/kids-public-post
